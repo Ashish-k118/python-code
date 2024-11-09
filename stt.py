@@ -1,22 +1,21 @@
-'''
 # list, set , dsnery  in deno me cheng ho skte hai 
 
-string :
+# string :
 
-1) sequence (ordered)
-2) immutable
+# 1) sequence (ordered)
+# 2) immutable
 
 
-===================  
-'''
+# ===================  
+
 
 # mathod of  string :  
-'''
+
 msg= "string is a immutable data-type"
 # print (msg[12,21])  # slaiging
 
 msg[3]="y"
-'''
+
 
 
 
