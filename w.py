@@ -68,6 +68,9 @@ for i in range(1,n+1):
         print(2*i-1)
 '''
 
+
+#  for loop use t string number:  
+
 n=input("Enter String number: ")
 v=0
 c=0
