@@ -1,26 +1,26 @@
-# # import random
+# import random
 
-# # snacks = ['chips', 'popcorn', 'candy', 'nuts', 'jerky']
+# snacks = ['chips', 'popcorn', 'candy', 'nuts', 'jerky']
 
-# # def snack_game():
-# #     print("Welcome to the Snack Game!")
-# #     print("You will be given a random snack.")
-# #     print("If you like the snack, type 'yum'. If you don't like it, type 'yuck'.")
-# #     print("Let's begin!")
-# #     print("")
+# def snack_game():
+#     print("Welcome to the Snack Game!")
+#     print("You will be given a random snack.")
+#     print("If you like the snack, type 'yum'. If you don't like it, type 'yuck'.")
+#     print("Let's begin!")
+#     print("")
     
-# #     random_snack = random.choice(snacks)
-# #     response = input(f"Your snack is {random_snack}. Yum or yuck? ")
+#     random_snack = random.choice(snacks)
+#     response = input(f"Your snack is {random_snack}. Yum or yuck? ")
     
-# #     if response == 'yum':
-# #         print("Great! Enjoy your snack!")
-# #     elif response == 'yuck':
-# #         print("Oh no! Better luck next time.")
-# #     else:
-# #         print("Invalid response. Please try again.")
-# #         snack_game()
+#     if response == 'yum':
+#         print("Great! Enjoy your snack!")
+#     elif response == 'yuck':
+#         print("Oh no! Better luck next time.")
+#     else:
+#         print("Invalid response. Please try again.")
+#         snack_game()
 
-# # snack_game()
+# snack_game()
 
 
 
