@@ -55,7 +55,7 @@ print(x)
 
 instance variable
 
-delclaration of isinstance variable
+delclaration of instance variable
 1. inside class
     1. in constructor
     2. in isinstance methods
@@ -240,7 +240,7 @@ obj.add()
 obj.add1()
 print(x)
 
-'''
+
 
 
 
@@ -258,3 +258,160 @@ obj=cybrom
 obj.add()
 obj.add1()
 print(x)
+
+
+
+x=50
+def new ():
+    global x
+    print(x)
+    x=10
+    print(x)
+print(x)
+new()
+print(x)
+
+
+
+
+
+
+# method :-
+
+#    1. instance method
+#    2. class method
+#    3. static method  (static vriable ko class me coll krne ke liye hum class ke name 
+call krte hai )
+
+
+
+#  1. instance method :-
+
+
+class A:
+    def new(self):
+        print("1st method")   # declaration
+    def new1(self):
+        self.new()
+        print("2nt method")   # Colling
+obj=A()
+#bj.new()
+obj.new1()   # Colling
+
+
+
+#  Class Method   (cls )
+#  static variable ko modifay karne ke liye class method ka use krte hai.
+
+#  Class Mthod
+    1. insted of self we use cla
+    2. @classmethod
+
+
+
+
+class book:
+    price=190
+    def __init__(self, outhor, page):
+        self.outhor=outhor
+        self.page=page
+    @classmethod
+    def update_price(cls, price):
+        cls.price=price
+    def show_details(self):
+        print(self.outhor)
+        print(book.price)
+        print(self.page)
+obj=book('Paradox', 500)
+obj.show_details()
+obj.update_price(900)
+obj.show_details()
+
+
+
+
+# multipal inherietanc
+
+class father:
+    x=10
+    y=20
+    z=30
+    def property(self):
+        self.name= 'f_name'
+        self.bank= 'f_bank'
+        print(self.name)
+        print(self.bank)
+class mother:
+    p=19 
+    o=32
+    i=89
+    def property1(self):
+        self.name1= 'm_name'
+        self.bank2= 'm_bank'
+        print(self.name1)
+        print(self.bank2)
+class son(father, mother):
+    pass
+# print(dir(son))
+obj=son()
+obj.property()
+obj.property1()
+
+
+
+
+# 1. mathed overloding
+
+# 2. method overriding
+#       1. varibale lentn argument se overring  karte hai 
+
+
+
+# polymorhism
+# --------------
+
+# same name function with diffrent argument. 
+# argument ke upar depend krta hai ki output kya ayega. 
+
+
+# polymorhism
+
+my_list=[10,20,'Paradox']
+my_str='Paradox'
+print(len(my_str))
+print(len(my_list))
+
+
+
+type :- 1. method overloding 
+        2. method overriding
+
+1. method overloding
+
+
+
+class A:
+        def add (self, x, y):
+                return x+y
+        def add (self, x, y, z):
+                return x+y+2
+obj=A()
+obj.add(10,20)
+
+'''
+
+
+class A:
+        def add(self, *n):
+                sum=0
+                for i in n:
+                        sum=sum+i
+                return sum
+obj=A()
+x=obj.add(10,20)
+print(x)
+y=obj.add(10,20,30)
+print(y)
+
+
+# haybrid inheretenc
